@@ -1,0 +1,157 @@
+% This is "sig-alternate.tex" V2.0 May 2012
+% This file should be compiled with V2.5 of "sig-alternate.cls" May 2012
+%
+% This example file demonstrates the use of the 'sig-alternate.cls'
+% V2.5 LaTeX2e document class file. It is for those submitting
+% articles to ACM Conference Proceedings WHO DO NOT WISH TO
+% STRICTLY ADHERE TO THE SIGS (PUBS-BOARD-ENDORSED) STYLE.
+% The 'sig-alternate.cls' file will produce a similar-looking,
+% albeit, 'tighter' paper resulting in, invariably, fewer pages.
+%
+% ----------------------------------------------------------------------------------------------------------------
+% This .tex file (and associated .cls V2.5) produces:
+%       1) The Permission Statement
+%       2) The Conference (location) Info information
+%       3) The Copyright Line with ACM data
+%       4) NO page numbers
+%
+% as against the acm_proc_article-sp.cls file which
+% DOES NOT produce 1) thru' 3) above.
+%
+% Using 'sig-alternate.cls' you have control, however, from within
+% the source .tex file, over both the CopyrightYear
+% (defaulted to 200X) and the ACM Copyright Data
+% (defaulted to X-XXXXX-XX-X/XX/XX).
+% e.g.
+% \CopyrightYear{2007} will cause 2007 to appear in the copyright line.
+% \crdata{0-12345-67-8/90/12} will cause 0-12345-67-8/90/12 to appear in the copyright line.
+%
+% ---------------------------------------------------------------------------------------------------------------
+% This .tex source is an example which *does* use
+% the .bib file (from which the .bbl file % is produced).
+% REMEMBER HOWEVER: After having produced the .bbl file,
+% and prior to final submission, you *NEED* to 'insert'
+% your .bbl file into your source .tex file so as to provide
+% ONE 'self-contained' source file.
+%
+% ================= IF YOU HAVE QUESTIONS =======================
+% Questions regarding the SIGS styles, SIGS policies and
+% procedures, Conferences etc. should be sent to
+% Adrienne Griscti (griscti@acm.org)
+%
+% Technical questions _only_ to
+% Gerald Murray (murray@hq.acm.org)
+% ===============================================================
+%
+% For tracking purposes - this is V2.0 - May 2012
+
+
+\documentclass{sig-alternate}
+
+\usepackage{todonotes}
+\usepackage{hyperref}
+
+\begin{document}
+
+
+% --- Author Metadata here ---
+\conferenceinfo{Foundations of Digital Games Workshop on the Global Game Jam}{2013 Chania, Crete, Greece}
+\CopyrightYear{2013}
+%\conferenceinfo{WOODSTOCK}{'97 El Paso, Texas USA}
+%\CopyrightYear{2007} % Allows default copyright year (20XX) to be over-ridden - IF NEED BE.
+%\crdata{0-12345-67-8/90/01}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
+% --- End of Author Metadata ---
+
+\title{Game Ideation and Development Processes in the Global Game Jam}
+%\subtitle{}
+
+\numberofauthors{1}
+%\author{
+%\alignauthor
+%Alexander Zook and Mark O. Riedl\\
+%       \affaddr{School of Interactive Computing, College of Computing}\\
+%       \affaddr{Georgia Institute of Technology}\\
+%       \affaddr{Atlanta, Georgia, USA}\\
+%       \email{\{a.zook, riedl\}@gatech.edu}
+%}
+
+\maketitle
+\begin{abstract}
+\todo[inline]{update to results}
+My proposed research will investigate the knowledge and creative processes involved in conceiving of a game and grounding an initial set of ideas in game mechanics. Particular details of this knowledge and process will be investigated using semi-structured interviews with completed games. Broader characterizations will be explored using a questionnaire distributed to the Global Game Jam participants. Combining in-depth interview information and large-scale survey information will provide insights into the creative practices involved in the game design process of value to researchers in many areas relating to the practices of game design, creativity in game jams, and the goals and tools of game jam participants.
+\end{abstract}
+
+\todo[inline]{decide category, terms, etc.}
+% A category with the (minimum) three required fields
+\category{H.4}{Information Systems Applications}{Miscellaneous}
+%A category including the fourth, optional field follows...
+\category{D.2.8}{Software Engineering}{Metrics}[complexity measures, performance measures]
+\terms{Theory}
+\keywords{ACM proceedings, \LaTeX, text tagging}
+
+
+
+\section{Introduction}
+
+\begin{enumerate}
+\item Design goals---Characterizing the goals GGJ participants set for their games. Anecdotally the game design literature involves debates around the merit of different design goals (e.g. consider the breadth of approaches presented in game design reference sources \cite{fullerton2008:playcentric}\cite{salen2003:rulesplay} \cite{salen2006:reader} \cite{schell2008:gamedesign}). Design goals range from making a game fun for players \cite{koster2005:theory-fun} to creating immersion and a sense of flow \cite{fullerton2006:cloudgame} to conveying a meaningful message \cite{bogost2007:persuasive}. I aim to characterize this range of goals and understand how design goals are brought to bear on the design process.
+\item Game ideation---Identifying the sources of creative inspiration designers draw from. Existing models of game ideation suggest there are many entry points for starting a design but tend to be based on theoretical analyses rather than existing practices \cite{hunicke2004:mda}. Example sources for game ideas include everyday activities a game is inspired by \cite{treanor2010:kaboom}, metaphors a game is meant to convey \cite{rusch2008:game-metaphor}, or models of systems \cite{crawford1984:gamedesign}. My goal is to characterize the kinds of knowledge GGJ game designers employ when defining the game they will create.
+\item Game prototyping---Examining how designers ground inspirational ideas in particular game mechanics or systems. Initial inspirational ideas must be grounded in particular game systems and many designers report testing out a variety of potential ideas before settling on a system to employ \cite{gabler2005:7day-prototype} \cite{manker2011:prototyping} \cite{nelson2009:reqanal}. My goal is to characterize the process of mapping between ideas and mechanics designers employ.
+\item Game refinement/balancing---Uncovering game balancing and refinement processes involved in terms of the features balanced and reasoning for balancing choices. Regardless of level of final ``polish'', game designs typically go through phases of some refinement of game systems to achieve the goals designers have set out \cite{schell2008:gamedesign}. While the GGJ puts tight time constraints on designers that limits the effort spent on this phase of design there are still many insights to be gained from what elements designers choose to refine, why and when.
+\end{enumerate}
+
+By studying participants at the GGJ I hope to gain detailed information on how game design processes occur, particularly focusing on creativity in realizing abstract game ideas in final designs. I hope to contribute to the body of knowledge of how game design occurs and use this knowledge to inform my subsequent development of AI tools to support game design creativity. 
+
+\section{Method}
+To broaden the generality of my results and better understand the breadth of design approaches involved I will also distribute a questionnaire highlighting the primary questions involved in the interview process. While not providing the same level of detail, this broader survey will enable me to empirically examine the range of design approaches involved. Questions included (see below) cover the same topics as the interview process, emphasizing the four areas of design goals, game ideation, game prototyping, and game balance/refinement above.
+
+Questions listed in Appendix \ref{sec:survey}
+
+\section{Results}
+
+\begin{enumerate}
+\item results aligning w/theories
+\item results diverging
+\item details of areas
+\end{enumerate}
+
+\section{Conclusions}
+More research into differences in outcomes based on processes for approaching: pruning vs expanding. In-depth protocol analysis to get detailed evolution. Comparison of design methods by levels of experience.
+
+Alternate formats of jam for skill sets: playtest-focused, full game development, etc.
+
+%ACKNOWLEDGMENTS are optional
+\section{Acknowledgments}
+Global Game Jam committee. Global Game Jam participants and survey respondents.
+
+
+% The following two commands are all you need in the
+% initial runs of your .tex file to
+% produce the bibliography for the citations in your paper.
+\bibliographystyle{abbrv}
+\bibliography{lib}
+
+
+% ACM needs 'a single self-contained file'!
+
+%APPENDICES are optional
+%\balancecolumns
+
+\appendix
+\todo[inline]{possibly use for questions given}
+\section{Survey Questions}
+\label{sec:survey}
+\begin{list}{\labelitemi}{\leftmargin=10pt \itemindent=0em \itemsep=0pt}
+\item What was your initial goal for the game you made during the global game jam?
+\item What inspirations or initial ideas did you have for your game? What was the starting inspirational source or goal for the game?
+\item Why did you pick this particular idea for the game?
+\item What problems did you encounter in developing your game?
+\item What changes did you make to your initial idea as you worked on it during the game jam? Please describe the changes as small pieces of changes as possible.
+\item What game mechanics and/or gameplay systems did you use in your game?
+\item How did the mechanics or systems you made relate to the initial design ideas you had?
+\item How did these mechanics change as you worked on the game during the game jam?
+\item Did you prototype your game? If so, what kind of prototyping did you do and what did you learn from doing it?
+\item What tools did you use to make your game? Please include software tools (e.g. programming languages or game engines) and any physical/analog materials (e.g. paper prototyping methods or storyboarding).
+\end{list}
+
+\end{document}
