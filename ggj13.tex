@@ -66,6 +66,7 @@
 %\subtitle{}
 
 \numberofauthors{1}
+\author{}
 %\author{
 %\alignauthor
 %Alexander Zook and Mark O. Riedl\\
@@ -121,7 +122,7 @@ We conclude with a discussion of ways to deepen this analysis through triangulat
 We examine the process of conceptualizing and realizing a game, specifically: inspirations and goals for a design, and the process of developing ideas and turning them into concrete running code (prototyping, implementing, and refining).
 %, and pitfalls GGJ participants frequently encountered.
 
-The GGJ emphasizes values of creativity and innovation and we sought to characterizing the design goals and insirational sources GGJ participants set for their games. Anecdotally, the game design literature had debated the merit of different design goals (e.g. consider prominent game design texts \cite{fullerton2008:playcentric}\cite{salen2003:rulesplay} \cite{salen2006:reader} \cite{schell2008:gamedesign}). Design goals range from making a game fun for players \cite{koster2005:theory-fun} to creating immersion and a sense of flow \cite{fullerton2006:cloudgame} to conveying a meaningful message \cite{bogost2007:persuasive}. Bogost \cite{bogost2011:howto} catalogs a plethora of uses for games---from inducing relaxation to drilling skills---using existing game examples. Despite this rich discussion, little empirical work has examined the space of design goals. We examine the range of design goals GGJ participants set for their designs.
+The GGJ emphasizes values of experimentation and innovation and we sought to characterizing the design goals and insirational sources GGJ participants set for their games. Anecdotally, the game design literature had debated the merit of different design goals (e.g. consider prominent game design texts \cite{fullerton2008:playcentric}\cite{salen2003:rulesplay} \cite{salen2006:reader} \cite{schell2008:gamedesign}). Design goals range from making a game fun for players \cite{koster2005:theory-fun} to creating immersion and a sense of flow \cite{fullerton2006:cloudgame} to conveying a meaningful message \cite{bogost2007:persuasive}. Bogost \cite{bogost2011:howto} catalogs a plethora of uses for games---from inducing relaxation to drilling skills---using existing game examples. Despite this rich discussion, little empirical work has examined the space of design goals. We examine the range of design goals GGJ participants set for their designs.
 
 Game inspirations are the sources of ideas designers draw from when conceptualizing their game. Existing models of game conceptualization suggest there are many entry points for starting a design, but tend to be based on theoretical analyses rather than existing practices \cite{hunicke2004:mda}. Example sources for game ideas include everyday activities a game is inspired by \cite{treanor2010:kaboom}, metaphors a game is meant to convey \cite{rusch2008:game-metaphor}, or models of systems \cite{crawford1984:gamedesign}. We empirically examine the kinds of inspiration GGJ participants draw on and discuss their relation to the use of themes in the GGJ.
 
@@ -154,16 +155,23 @@ We provided a ten question open-response survey that was administered online as 
 \section{Results}
 Of approximately 16,700 participants in the GGJ, 420 provided responses to at least one of these questions.
 Below we discuss broad categories of responses within each of the study topics: inspirations, design goals, prototyping methods, and the flow of realizing game ideas in code.
-General note: game jam theme has strong influence on participant results. Many used to ground ideation process. Jam constraints focused on development problems, with playtesting and prototyping often being cut. Team management is not frequently mentioned.
+
+%General note: game jam theme has strong influence on participant results. Many used to ground ideation process. Jam constraints focused on development problems, with playtesting and prototyping often being cut. Team management is not frequently mentioned.
 
 \subsection{Inspirations}
-Often draw from existing games or games played as genres or genre exemplars. typically simple genres with single player games. heavily skewed towards things amenable to theme.
+Participants drew from a breadth of sources for inspiration, including: other games, abstract concepts, emotions, life experiences, art styles, biological systems, books and poems, music, and films. Many mentioned explicit use of the GGJ theme---the sound of a heart beating in 2013---inspiring the use of rhythm in game mechanics, biological hearts as model systems, and life experiences of love. Interestingly, some intentionally sought to have more distant connections to the theme:
+``QUOTE'' \todo[inline]{quote text} 
 
-Themes to convey.
+Drawing from life experiences \cite{anthropy2012:zinesters}, systems to model \cite{crawford1984:gamedesign}, and other media \cite{bogost2011:howto} are all recognized in the game design literature as important sources of inspiration.
+We found life experiences references in terms of specific memories (e.g. watching a blind-friendly TV show) as well as general activities (e.g. holding a conversation).
+Biological systems---particularly the heart and associated diseases---were a source for some designs, primarily due to the heart beat jam theme.
+Non-game media provided initial grounding through scenarios (e.g. Edgar Allan Poe's ``The Telltale Heart'') or more general characters and concepts (e.g. the Borg from ``Star Trek'').
 
-Life experience.
+GGJ participants also tapped their gaming knowledge, in terms of specific target mechanics or reference games.
+The heart beat theme lead many projects to emphasize rhythm mechanics or incorporate rhythm elements into another genre. In general, mechanics proved to be a frequent starting point, representing the most commonly cite category \todo[inline]{number} after the theme \todo[inline]{number}.
+Game references included specific digital games (e.g. Super Mario Bros.), playground or field games (e.g. Simon Says or tag), tabletop games (e.g. \todo[inline]{find example}), or broad game genres (e.g. platformer, card game). Game references were connected to game mechanics, art styles, controls, ``feel'', etc. Overall, game references targeted single-player games and action-oriented genres (side-scrolling runner, platformer, one-button games, etc.).
 
-Analogies to systems.
+Together, these results demonstrate the GGJ community matches many professional game design norms, skewed by the theme and limitations of the GGJ. The GGJ theme pushed many participants on more abstract concepts than often seen in industry staple titles focused on fantasy adventures and science fiction. Strict time and resource limits focused development on game genres that are quick and easy to implement and refine. Together, these dual tensions make the GGJ a powerful incubator for small games that experiment with new themes and mechanics. However, this likely limits the value of the GGJ in training novices to build more complex game genres---real-time or turn-based strategy, role-playing games, simulation games, etc. Future GGJ efforts may target ways to support experimentation in these other avenues through alternative support structures, durations, or means for participating.
 
 \subsection{Design Goals}
 a few large categories of goals seem to drive participants:
@@ -213,7 +221,7 @@ Survey responses are limited to the most salient aspects of an experience, limit
 
 Semi-structured interviews provide another alternative to gathering detailed data. Interviews are limited by being primarily subjective data, but require far less time and detailed data than protocol analysis while still gaining useful qualitative insights. Using prompt materials gathered over the course of the GGJ---such as in-process game builds from source control, photos or video of onsite activity, and observer notes on the development process---may amerliorate some of the biases around memory salience.
 
-Our survey did not have demographic or identifying information on participants, preventing us from identifying team members. Understanding how team members differ in their thinking and process was not possible as a result, preventing a more in-depth study of how collaboration impacts the conceptualization and development process at the GGJ. Employing a retrospective protocol or semi-structured interview with individuals and subsequently groups is one means to collect such information.
+Our survey did not identifying information on participants. Understanding how team members differ in their thinking and process was not possible as a result, preventing a more in-depth study of how collaboration impacts the conceptualization and development process at the GGJ. Employing a retrospective protocol or semi-structured interview with individuals and subsequently groups is one means to collect such information.
 
 
 \section{Conclusions}
