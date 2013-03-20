@@ -131,25 +131,7 @@ Developing an idea into game mechanics involves grounding the abstract game conc
 Game balancing and refining processes involve finding aspects of the game that should be altered, selecting among those aspects, and choosing how to change them. Regardless of level of final ``polish'', game designs typically go through phases of some refinement of game systems to achieve the goals designers have set out \cite{schell2008:gamedesign} \cite{fullerton2008:playcentric}. We examine what aspects of GGJ games were altered and how these changes were made.
 
 \section{Method}
-We provided a ten question open-response survey that was administered online as part of the post-GGJ extended survey (Table \ref{tab:survey}). We gathered responses and coded responses to each of the questions into categories, allowing multiple possible codes for responses.
-
-\begin{table}
-\begin{tabular}{|p{\linewidth}|}
-\hline What was your initial goal for the game you made during the global game jam? \\
-\hline What inspirations or initial ideas did you have for your game? What was the starting inspirational source or goal for the game? \\
-\hline Why did you pick this particular idea for the game? \\
-\hline What problems did you encounter in developing your game? \\
-\hline What changes did you make to your initial idea as you worked on it during the game jam? Please describe the changes as small pieces of changes as possible. \\
-\hline What game mechanics and/or gameplay systems did you use in your game? \\
-\hline How did the mechanics or systems you made relate to the initial design ideas you had? \\
-\hline How did these mechanics change as you worked on the game during the game jam? \\
-\hline Did you prototype your game? If so, what kind of prototyping did you do and what did you learn from doing it? \\
-\hline What tools did you use to make your game? Please include software tools (e.g. programming languages or game engines) and any physical/analog materials (e.g. paper prototyping methods or storyboarding). \\
-\hline 
-\end{tabular}
-\caption{Survey questions.}
-\label{tab:survey} 
-\end{table}
+We provided a ten question open-response survey that was administered online as part of the post-GGJ extended survey (Appendix \ref{sec:survey}). We gathered and manually coded responses to each of the questions into categories, allowing multiple possible codes for responses.
 
 
 \section{Results}
@@ -180,7 +162,7 @@ System-level goals emphasized creating a game of a certain type or that met cert
 
 Personal goals focused on benefits to GGJ participant themselves. 
 The single most common goal \todo[inline]{number} was to make and finish a game. 
-Many sought to learn skills (particularly programming, but also art, audio, and design), network with others, build their portfolio, test potential ideas for later expansion, enjoy the game creation process, or even ``win the competition.'' Participants see the jam as an opportunity to test out game development or seed their future projects. An emphasis on competition among some is particularly interesting given the GGJ site explicitly states: ``The GGJ is not a competition.''\footnote{http://globalgamejam.org/about}
+Many sought to learn skills (particularly programming, but also art, audio, and design), network with others, build their portfolio, test potential ideas for later expansion, enjoy the game creation process, or even ``win the competition.'' Participants see the jam as an opportunity to test out game development or seed their future projects. An emphasis on competition among some is particularly interesting given the GGJ site explicitly states: ``The GGJ is not a competition.''\footnote{\url{http://globalgamejam.org/about}}
 
 Player-oriented goals emphasize the person(s) engaging with a game. Fullerton et al. \cite{fullerton2008:playcentric} emphasize a play-centric approach to design focusing on players while McGonigal \cite{mcgonigal2011:realitybroken} highlights the potential for games to have individual and societal impacts.
 GGJ participants referenced goals of players enjoying the game, learning about a new topic (e.g. bee colony collapse disorder), or engaging in critical thinking about a topic. Societal-level design goals aimed to raise awareness about world issues or even ``change the world.''
@@ -205,33 +187,36 @@ Parallel development approaches deliberately built and tested features for the g
 Compared to professionally described best practices \cite{fullerton2008:playcentric} GGJ participants as a whole describe relatively little use of player feedback. Most development focused on becoming familiar with tools to implement mechanics and removing obvious bugs that inhibited game functionality. Our question on problems encountered mentioned programming and acquiring and using game development tools as the most pressing challenges. Given the GGJ is focused on providing programming experience this may not necessarily be problematic, although future jams may consider alternative ways to prepare or support learning basic game creation tools before or during the jam to alleviate some of these problems.
 
 \subsection{Realization}
-Realizing an initial game concept as an implemented game typically involved changes both to the initial ideas from final game. GGJ participants managed the set of features and game artifact in three ways:
+Realizing an initial game concept as an implemented game typically involved changes both to the initial ideas from final game. Responses to questions about changes to the game mechanics and game ideas were often interchangeable and we report on their combined results here.
+
+GGJ participants managed the set of game features and game artifact in three ways:
 (1) starting from many ideas and iteratively reducing scope based on dependencies or feasibility;
 (2) starting from vague ideas and building out mechanics and ideas during implementation;
 and
 (3) starting from a core idea and building it up based on testing and feedback.
+Shifting ideas were largely implemented using the same broad sets of tactics: adding or removing whole mechanics, swapping out one mechanic for an (often simpler) alternative, and fine-tuning and balancing a mechanic. Some participants also included details on changes to the game objectives, background story and theme, art assets and animations, or functionality of multiplayer interactions.
 
 Scope reduction occurred by cutting out intended features, taking complex or large mechanics and systems and reducing the number of elements involved, or substituting more complex systems for simpler alternatives.
 Cutting features served to reduce the overall functionality of the game, typically because the magnitude of the task to implement them was infeasible or time simply ran out. Participants would remove both systems within the game (e.g. attacks requiring combinations of buttons rather than single buttons) or reduce the total number of components used (e.g. fewer game levels or types of enemies).
 Reducing mechanics more often occurred when already implemented systems were buggy or dysfunctional or when playtesting (personally or with others) showed them to be overly complex or unintuitive. 
-Iterative scope reduction was the most common way participants described their process.
+Iterative scope reduction was the most common way participants described their process and was typically due to development constraints.
 
-An alternative approach involved only vaguely specifying the game systems before attempting to build an initial game. Once that game was built further mechanics and ideas would be added by riffing off of the core systems and crystallizing the general idea.
+An alternative approach involved only vaguely specified the game systems before attempting to build an initial game. Once that game was built further mechanics and ideas would be added by riffing off of the core systems and crystallizing the general idea.
 \todo[inline]{example}
 Rather than carefully plan out a full game, a vague inspiration would seed the process of solidifying ideas through iterative feedback with their realization.
+In some cases this lead to an unintentional change in game genre due to incremental shifts in mechanics or a shift in design goals:
+``\todo[inline]{quote about changing}''
 
-Participants also described player-centered approaches that explicitly planned a small game and relied on testing and external feedback to build off that core game. Unlike starting from a vague idea these games were described as built from a process of trying to get a product rapidly to players in order to refine and extend it as needed. These approaches put heavier emphasis on a polished final product, rather than realizing an abstract idea.
+Participants also described player-centered approaches that explicitly planned a small game and relied on testing and external feedback to build off that core game. Unlike starting from a vague idea these games were described as built from a process of trying to get a product to players rapidly in order to refine and extend it as needed. These approaches put heavier emphasis on a polished final product, rather than realizing an abstract idea.
+
+Overall, the GGJ seems to serve as an important venue for developing experience in programming and realizing a final game based on a personal vision. The jam time constraints (and lack of available testers) generally steer development practices toward personal responses to the product, rather than player testing and feedback. These results open questions as to whether the GGJ can more effectively encourage standard industry practices such as paper prototyping and player testing and whether these industry methods are amenable to innovative practices under strict time constraints.
 
 %Aside mechanics, visualization and controls were occasionally mentioned as aspects developers would change along the way. Balance and feature polish (particularly art) were also discussed, but were less central aspects. The GGJ focuses on integrating many parts over learning how each task works. heavy programming challenges suggest biggest issue and focus on learning is around how to get code up more than exercising other skills.
 
-idea changes most frequently driven by development needs rather than playtest results. testing primarily seems to have been based on personal reactions to product rather than player feedback. GGJ seems to encourage ``personal'' games that meet one's own standards more than play-centric designs. 
+%idea changes most frequently driven by development needs rather than playtest results. testing primarily seems to have been based on personal reactions to product rather than player feedback. GGJ seems to encourage ``personal'' games that meet one's own standards more than play-centric designs. 
 \todo[inline]{cite other study of professional designer types?}
 
-\begin{enumerate}
-\item results aligning w/theories
-\item results diverging
-\item details of areas
-\end{enumerate}
+
 
 \section{Methodological Limitations and Implications}
 % % note limitations of survey method: wasn't able to get great detail on flow of process; focus on high-level changes; only those who opt-in
@@ -245,6 +230,18 @@ Our survey did not identifying information on participants. Understanding how te
 
 
 \section{Conclusions}
+GGJ goals: innovation, experimentation, collaboration, creativity
+- innovation: inspirations are relatively narrow range
+	- some came to innovate, but most came to make things
+	- note that many drew inspirations that came from either side of interpreting "heart" - often macabre responses
+- experimentation: many are involved to simply make a game
+	- strong inspirations from existing games and desire to make basic game
+	- Q: what would better foster experimentation?
+- collaboration: few interested explicitly in networking or working with team; often complain about team problems
+	- Q: are there better ways to foster collaboration through matchmaking methods or systems? pre-jam pairing or at-jam?
+- biggest problems are around programming + collaborating
+	- mismatch between what participants seek (short duration event to make game) and what jam provides
+
 More research into differences in outcomes based on processes for approaching: pruning vs expanding. In-depth protocol analysis to get detailed evolution. Comparison of design methods by levels of experience.
 
 Alternate formats of jam for skill sets: playtest-focused, full game development, etc.
@@ -267,24 +264,44 @@ Global Game Jam committee. Global Game Jam participants and survey respondents.
 
 % ACM needs 'a single self-contained file'!
 
+\pagebreak
+
 %APPENDICES are optional
 %\balancecolumns
-
-%\appendix
+\appendix
 %\todo[inline]{possibly use for questions given}
-%\section{Survey Questions}
-%\label{sec:survey}
-%\begin{list}{\labelitemi}{\leftmargin=10pt \itemindent=0em \itemsep=0pt}
-%\item What was your initial goal for the game you made during the global game jam?
-%\item What inspirations or initial ideas did you have for your game? What was the starting inspirational source or goal for the game?
-%\item Why did you pick this particular idea for the game?
-%\item What problems did you encounter in developing your game?
-%\item What changes did you make to your initial idea as you worked on it during the game jam? Please describe the changes as small pieces of changes as possible.
-%\item What game mechanics and/or gameplay systems did you use in your game?
-%\item How did the mechanics or systems you made relate to the initial design ideas you had?
-%\item How did these mechanics change as you worked on the game during the game jam?
-%\item Did you prototype your game? If so, what kind of prototyping did you do and what did you learn from doing it?
-%\item What tools did you use to make your game? Please include software tools (e.g. programming languages or game engines) and any physical/analog materials (e.g. paper prototyping methods or storyboarding).
-%\end{list}
+\section{Survey Questions}
+\label{sec:survey}
+\begin{list}{\labelitemi}{\leftmargin=10pt \itemindent=0em \itemsep=0pt}
+\item What was your initial goal for the game you made during the global game jam?
+\item What inspirations or initial ideas did you have for your game? What was the starting inspirational source or goal for the game?
+\item Why did you pick this particular idea for the game?
+\item What problems did you encounter in developing your game?
+\item What changes did you make to your initial idea as you worked on it during the game jam? Please describe the changes as small pieces of changes as possible.
+\item What game mechanics and/or gameplay systems did you use in your game?
+\item How did the mechanics or systems you made relate to the initial design ideas you had?
+\item How did these mechanics change as you worked on the game during the game jam?
+\item Did you prototype your game? If so, what kind of prototyping did you do and what did you learn from doing it?
+\item What tools did you use to make your game? Please include software tools (e.g. programming languages or game engines) and any physical/analog materials (e.g. paper prototyping methods or storyboarding).
+\end{list}
+
+
+%\begin{table}
+%\begin{tabular}{|p{\linewidth}|}
+%\hline What was your initial goal for the game you made during the global game jam? \\
+%\hline What inspirations or initial ideas did you have for your game? What was the starting inspirational source or goal for the game? \\
+%\hline Why did you pick this particular idea for the game? \\
+%\hline What problems did you encounter in developing your game? \\
+%\hline What changes did you make to your initial idea as you worked on it during the game jam? Please describe the changes as small pieces of changes as possible. \\
+%\hline What game mechanics and/or gameplay systems did you use in your game? \\
+%\hline How did the mechanics or systems you made relate to the initial design ideas you had? \\
+%\hline How did these mechanics change as you worked on the game during the game jam? \\
+%\hline Did you prototype your game? If so, what kind of prototyping did you do and what did you learn from doing it? \\
+%\hline What tools did you use to make your game? Please include software tools (e.g. programming languages or game engines) and any physical/analog materials (e.g. paper prototyping methods or storyboarding). \\
+%\hline 
+%\end{tabular}
+%\caption{Survey questions.}
+%\label{tab:survey} 
+%\end{table}
 
 \end{document}
