@@ -92,25 +92,57 @@ My proposed research will investigate the knowledge and creative processes invol
 
 
 \section{Introduction}
+% % GGJ gives unique opportunities and challenges to study process of rapidly creating a game from a rough inspiration
+The Global Game Jam (GGJ) provides a unique opportunity to study the process of conceiving and building a game de novo within tight time constraints. Strict time limits enable the study of the game design and development process at a level of detail normally not possible, with massive participation (roughy 16,700 participants) allowing for large-scale patterns and analysis. 
+However, these opportunities come with methodology challenges for studying the design process. What are effective methods for understanding practices that can balance the scale of the GGJ with rigorous, detailed analysis? How can the unique structure of the jam be accounted for to help generalize results from GGJ participants to broader game design practices and methods?
 
-\begin{enumerate}
-\item Design goals---Characterizing the goals GGJ participants set for their games. Anecdotally the game design literature involves debates around the merit of different design goals (e.g. consider the breadth of approaches presented in game design reference sources \cite{fullerton2008:playcentric}\cite{salen2003:rulesplay} \cite{salen2006:reader} \cite{schell2008:gamedesign}). Design goals range from making a game fun for players \cite{koster2005:theory-fun} to creating immersion and a sense of flow \cite{fullerton2006:cloudgame} to conveying a meaningful message \cite{bogost2007:persuasive}. I aim to characterize this range of goals and understand how design goals are brought to bear on the design process.
-\item Game ideation---Identifying the sources of creative inspiration designers draw from. Existing models of game ideation suggest there are many entry points for starting a design but tend to be based on theoretical analyses rather than existing practices \cite{hunicke2004:mda}. Example sources for game ideas include everyday activities a game is inspired by \cite{treanor2010:kaboom}, metaphors a game is meant to convey \cite{rusch2008:game-metaphor}, or models of systems \cite{crawford1984:gamedesign}. My goal is to characterize the kinds of knowledge GGJ game designers employ when defining the game they will create.
-\item Game prototyping---Examining how designers ground inspirational ideas in particular game mechanics or systems. Initial inspirational ideas must be grounded in particular game systems and many designers report testing out a variety of potential ideas before settling on a system to employ \cite{gabler2005:7day-prototype} \cite{manker2011:prototyping} \cite{nelson2009:reqanal}. My goal is to characterize the process of mapping between ideas and mechanics designers employ.
-\item Game refinement/balancing---Uncovering game balancing and refinement processes involved in terms of the features balanced and reasoning for balancing choices. Regardless of level of final ``polish'', game designs typically go through phases of some refinement of game systems to achieve the goals designers have set out \cite{schell2008:gamedesign}. While the GGJ puts tight time constraints on designers that limits the effort spent on this phase of design there are still many insights to be gained from what elements designers choose to refine, why and when.
-\end{enumerate}
 
-By studying participants at the GGJ I hope to gain detailed information on how game design processes occur, particularly focusing on creativity in realizing abstract game ideas in final designs. I hope to contribute to the body of knowledge of how game design occurs and use this knowledge to inform my subsequent development of AI tools to support game design creativity. 
+% % enables unique lens on compressed process of conceptualizing and realizing design ideas - good opportunity to study process
+In this paper we study the compressed development process of conceptualizing a game and realizing the game in a working product at the 2013 GGJ. Studying this process is challenging---building a rigorous theory of the time-limited development process requires understanding how designers choose ideas and develop their game ideas, and how this relates to the dynamics of group collaboration and code-level implementation. 
+We take a multi-step approach: 
+using survey instruments to first characterize the space of game design process
+and then follow with more detailed studies of aspects of these processes.
+This paper describes the results of a free-response survey we administered to GGJ participants about their design inspirations and goals, process of implementing those ideas in a game over the course of the GGJ, how they refined their game, and pitfalls they encountered along the way. 
+We find common trends in inspirations for game ideas, methods for implementing a design into a working game, and common issues encountered in developing the ideas. We conclude with a discussion of ways to deepen this analysis through triangulation with other research methods and some of the implication of our results.
+
+
+% % studying is challenging - to build a deep theory of the process requires understanding the space of how designers go about deciding on ideas and developing them, and how this relates to process of collaborating and implementing ideas
+
+% % first study in overall process: overview in survey questions, then follow-ups planned to get detailed information on process. at least two important approaches: (1) semi-structured interviews to get more in-depth information on what occurred and (2) protocol analysis for detailed information on the process, representations, and flow among them.
+
+% % emphasis on process of ideating game and realizing: inspirations and goals for design, flow of process of developing ideas into concrete code (prototyping + realizing + refining), pitfalls along the way that highlight major challenges in process.
+
+% % close with limitations of the study and implications for how to move forward
+
+\section{Related Work / Study Topics}
+
+We examine the process of conceptualizing and realizing a game, specifically: inspirations and goals for a design, the process of developing ideas and turning them into concrete running code (prototyping, implementing, and refining), and pitfalls GGJ participants frequently encountered.
+
+The GGJ emphasizes values of creativity and innovation and we sought to characterizing the design goals and insirational sources GGJ participants set for their games. Anecdotally, the game design literature had debated the merit of different design goals (e.g. consider prominent game design texts \cite{fullerton2008:playcentric}\cite{salen2003:rulesplay} \cite{salen2006:reader} \cite{schell2008:gamedesign}). Design goals range from making a game fun for players \cite{koster2005:theory-fun} to creating immersion and a sense of flow \cite{fullerton2006:cloudgame} to conveying a meaningful message \cite{bogost2007:persuasive}. Bogost \cite{bogost2011:howto} catalogs a plethora of uses for games---from inducing relaxation to drilling skills---using existing game examples. Despite this rich discussion, little empirical work has examined the space of design goals. We examine the range of design goals GGJ participants set for their designs.
+
+Game inspirations are the sources of ideas designers draw from when conceptualizing their game. Existing models of game conceptualization suggest there are many entry points for starting a design, but tend to be based on theoretical analyses rather than existing practices \cite{hunicke2004:mda}. Example sources for game ideas include everyday activities a game is inspired by \cite{treanor2010:kaboom}, metaphors a game is meant to convey \cite{rusch2008:game-metaphor}, or models of systems \cite{crawford1984:gamedesign}. We empirically examine the kinds of inspiration GGJ participants draw on and discuss their relation to the use of themes in the GGJ.
+
+Developing an idea into game mechanics involves grounding the abstract game concept into a set mechanics through: (1) prototyping designs, (2) implementing running code, and (3) refining the game. Throughout this process there is potentially a feed loop between the game artifact and conceptualization. Initial inspirational ideas must be grounded in particular game systems and designers vary in how they approach the problem \cite{gabler2005:7day-prototype} \cite{manker2011:prototyping} \cite{nelson2009:reqanal}. Some approaches emphasize iterative playtesting \cite{fullerton2008:playcentric} \cite{schell2008:gamedesign} while others test a breadth of small ideas before settling on an idea \cite{gabler2005:7day-prototype}. Prototyping may leverage paper models \cite{manker2011:prototyping}, abstract models \cite{nelson2009:reqanal} \cite{dormans2011:machinations2}, or simple code \cite{gabler2005:7day-prototype}. We examine the use of prototyping in the GGJ and approaches designers take to realizing their ideas in running game code.
+
+Game balancing and refining processes involve finding aspects of the game that should be altered, selecting among those aspects, and choosing how to change them. Regardless of level of final ``polish'', game designs typically go through phases of some refinement of game systems to achieve the goals designers have set out \cite{schell2008:gamedesign} \cite{fullerton2008:playcentric}. We examine what aspects of GGJ games were altered and how these changes were made.
 
 \section{Method}
-To broaden the generality of my results and better understand the breadth of design approaches involved I will also distribute a questionnaire highlighting the primary questions involved in the interview process. While not providing the same level of detail, this broader survey will enable me to empirically examine the range of design approaches involved. Questions included (see below) cover the same topics as the interview process, emphasizing the four areas of design goals, game ideation, game prototyping, and game balance/refinement above.
+
 
 Questions listed in Appendix \ref{sec:survey}
+
+% % note limitations of survey method: wasn't able to get great detail on flow of process; focus on high-level changes; only those who opt-in
+- only 420 responses out of 16,705 participants
+- bias towards positive outcome teams is likely
+- don't have information to link multiple responses from same team
+- little detail on overall process, especially what specific aspects are changed
+	- e.g. most talk about mechanics, but may be that visualization and control changes were simply not mentioned due to question structure
+- lack demographic information on many respondents, thus hard to know how that may impact
 
 \section{Results}
 General note: game jam theme has strong influence on participant results. Many used to ground ideation process. Jam constraints focused on development problems, with playtesting and prototyping often being cut. Team management is not frequently mentioned.
 
-\subsection{Game Ideation}
+\subsection{Inspirations}
 Often draw from existing games or games played as genres or genre exemplars. typically simple genres with single player games. heavily skewed towards things amenable to theme.
 
 Themes to convey.
@@ -130,7 +162,7 @@ a few large categories of goals seem to drive participants:
 
 player-centered design de-emphasized, likely due to jam constraints. suggests GGJ currently emphasizes a process for game development rather than game design.
 
-\subsection{Game Prototyping}
+\subsection{Prototyping}
 list out aspects mentioned in prototyping
 
 Main approaches:
@@ -140,7 +172,7 @@ Main approaches:
 \item Iterative prototype. Intentionally layering in content.
 \end{enumerate}
 
-\subsection{Ideas to Game}
+\subsection{Realization}
 list main kinds of changes
 
 Three approaches to managing ideas/features: 
