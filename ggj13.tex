@@ -62,7 +62,7 @@
 %\crdata{0-12345-67-8/90/01}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
 % --- End of Author Metadata ---
 
-\title{Game Ideation and Development Processes in the Global Game Jam}
+\title{Game Conceptualization and Development Processes in the Global Game Jam}
 %\subtitle{}
 
 \numberofauthors{1}
@@ -103,7 +103,9 @@ We take a multi-step approach:
 using survey instruments to first characterize the space of game design process
 and then follow with more detailed studies of aspects of these processes.
 This paper describes the results of a free-response survey we administered to GGJ participants about their design inspirations and goals, process of implementing those ideas in a game over the course of the GGJ, how they refined their game, and pitfalls they encountered along the way. 
-We find common trends in inspirations for game ideas, methods for implementing a design into a working game, and common issues encountered in developing the ideas. We conclude with a discussion of ways to deepen this analysis through triangulation with other research methods and some of the implication of our results.
+We find common trends in inspirations for game ideas, design goals for games, and process for implementing a design into a working game.
+%, and common issues encountered in developing the ideas. 
+We conclude with a discussion of ways to deepen this analysis through triangulation with other research methods and some of the implication of our results.
 
 
 % % studying is challenging - to build a deep theory of the process requires understanding the space of how designers go about deciding on ideas and developing them, and how this relates to process of collaborating and implementing ideas
@@ -116,7 +118,8 @@ We find common trends in inspirations for game ideas, methods for implementing a
 
 \section{Related Work / Study Topics}
 
-We examine the process of conceptualizing and realizing a game, specifically: inspirations and goals for a design, the process of developing ideas and turning them into concrete running code (prototyping, implementing, and refining), and pitfalls GGJ participants frequently encountered.
+We examine the process of conceptualizing and realizing a game, specifically: inspirations and goals for a design, and the process of developing ideas and turning them into concrete running code (prototyping, implementing, and refining).
+%, and pitfalls GGJ participants frequently encountered.
 
 The GGJ emphasizes values of creativity and innovation and we sought to characterizing the design goals and insirational sources GGJ participants set for their games. Anecdotally, the game design literature had debated the merit of different design goals (e.g. consider prominent game design texts \cite{fullerton2008:playcentric}\cite{salen2003:rulesplay} \cite{salen2006:reader} \cite{schell2008:gamedesign}). Design goals range from making a game fun for players \cite{koster2005:theory-fun} to creating immersion and a sense of flow \cite{fullerton2006:cloudgame} to conveying a meaningful message \cite{bogost2007:persuasive}. Bogost \cite{bogost2011:howto} catalogs a plethora of uses for games---from inducing relaxation to drilling skills---using existing game examples. Despite this rich discussion, little empirical work has examined the space of design goals. We examine the range of design goals GGJ participants set for their designs.
 
@@ -127,19 +130,30 @@ Developing an idea into game mechanics involves grounding the abstract game conc
 Game balancing and refining processes involve finding aspects of the game that should be altered, selecting among those aspects, and choosing how to change them. Regardless of level of final ``polish'', game designs typically go through phases of some refinement of game systems to achieve the goals designers have set out \cite{schell2008:gamedesign} \cite{fullerton2008:playcentric}. We examine what aspects of GGJ games were altered and how these changes were made.
 
 \section{Method}
+We provided a ten question open-response survey that was administered online as part of the post-GGJ extended survey (Table \ref{tab:survey}). We gathered responses and coded responses to each of the questions into categories, allowing multiple possible codes for responses.
 
+\begin{table}
+\begin{tabular}{|p{\linewidth}|}
+\hline What was your initial goal for the game you made during the global game jam? \\
+\hline What inspirations or initial ideas did you have for your game? What was the starting inspirational source or goal for the game? \\
+\hline Why did you pick this particular idea for the game? \\
+\hline What problems did you encounter in developing your game? \\
+\hline What changes did you make to your initial idea as you worked on it during the game jam? Please describe the changes as small pieces of changes as possible. \\
+\hline What game mechanics and/or gameplay systems did you use in your game? \\
+\hline How did the mechanics or systems you made relate to the initial design ideas you had? \\
+\hline How did these mechanics change as you worked on the game during the game jam? \\
+\hline Did you prototype your game? If so, what kind of prototyping did you do and what did you learn from doing it? \\
+\hline What tools did you use to make your game? Please include software tools (e.g. programming languages or game engines) and any physical/analog materials (e.g. paper prototyping methods or storyboarding). \\
+\hline 
+\end{tabular}
+\caption{Survey questions.}
+\label{tab:survey} 
+\end{table}
 
-Questions listed in Appendix \ref{sec:survey}
-
-% % note limitations of survey method: wasn't able to get great detail on flow of process; focus on high-level changes; only those who opt-in
-- only 420 responses out of 16,705 participants
-- bias towards positive outcome teams is likely
-- don't have information to link multiple responses from same team
-- little detail on overall process, especially what specific aspects are changed
-	- e.g. most talk about mechanics, but may be that visualization and control changes were simply not mentioned due to question structure
-- lack demographic information on many respondents, thus hard to know how that may impact
 
 \section{Results}
+Of approximately 16,700 participants in the GGJ, 420 provided responses to at least one of these questions.
+Below we discuss broad categories of responses within each of the study topics: inspirations, design goals, prototyping methods, and the flow of realizing game ideas in code.
 General note: game jam theme has strong influence on participant results. Many used to ground ideation process. Jam constraints focused on development problems, with playtesting and prototyping often being cut. Team management is not frequently mentioned.
 
 \subsection{Inspirations}
@@ -191,6 +205,17 @@ idea changes most frequently driven by development needs rather than playtest re
 \item details of areas
 \end{enumerate}
 
+\section{Methodological Limitations and Implications}
+% % note limitations of survey method: wasn't able to get great detail on flow of process; focus on high-level changes; only those who opt-in
+The voluntary survey methodology we has important limitations in coverage of GGJ participants and the depth of response data gathered. Only 420 of 16,700 participants responded to these questions. Respondents were likely skewed toward successful projects and those more invested in the GGJ. Thus, we cannot easily examine similarities or differences in design processes between those who successfully complete the GGJ and those who do not. Future research will require better methods to automate survey administration and collection or ensure randomized sampling from participants.
+
+Survey responses are limited to the most salient aspects of an experience, limiting the level of detailed processual information gathered. We cannot make strong conclusions about the cognitive or social processes involved in game development from this form of data. Retrospective protocol analysis---where participants are recorded and asked to then view this recording and narrate their thinking---is one means to gather such detailed data, although constrained to a smaller scale than we employed. As retrospective protocols are typically used for short sessions (up to hours) they may require modifications to find and examine only key points in the process, or to use a ``fast-forward'' viewing approach. 
+
+Semi-structured interviews provide another alternative to gathering detailed data. Interviews are limited by being primarily subjective data, but require far less time and detailed data than protocol analysis while still gaining useful qualitative insights. Using prompt materials gathered over the course of the GGJ---such as in-process game builds from source control, photos or video of onsite activity, and observer notes on the development process---may amerliorate some of the biases around memory salience.
+
+Our survey did not have demographic or identifying information on participants, preventing us from identifying team members. Understanding how team members differ in their thinking and process was not possible as a result, preventing a more in-depth study of how collaboration impacts the conceptualization and development process at the GGJ. Employing a retrospective protocol or semi-structured interview with individuals and subsequently groups is one means to collect such information.
+
+
 \section{Conclusions}
 More research into differences in outcomes based on processes for approaching: pruning vs expanding. In-depth protocol analysis to get detailed evolution. Comparison of design methods by levels of experience.
 
@@ -217,21 +242,21 @@ Global Game Jam committee. Global Game Jam participants and survey respondents.
 %APPENDICES are optional
 %\balancecolumns
 
-\appendix
-\todo[inline]{possibly use for questions given}
-\section{Survey Questions}
-\label{sec:survey}
-\begin{list}{\labelitemi}{\leftmargin=10pt \itemindent=0em \itemsep=0pt}
-\item What was your initial goal for the game you made during the global game jam?
-\item What inspirations or initial ideas did you have for your game? What was the starting inspirational source or goal for the game?
-\item Why did you pick this particular idea for the game?
-\item What problems did you encounter in developing your game?
-\item What changes did you make to your initial idea as you worked on it during the game jam? Please describe the changes as small pieces of changes as possible.
-\item What game mechanics and/or gameplay systems did you use in your game?
-\item How did the mechanics or systems you made relate to the initial design ideas you had?
-\item How did these mechanics change as you worked on the game during the game jam?
-\item Did you prototype your game? If so, what kind of prototyping did you do and what did you learn from doing it?
-\item What tools did you use to make your game? Please include software tools (e.g. programming languages or game engines) and any physical/analog materials (e.g. paper prototyping methods or storyboarding).
-\end{list}
+%\appendix
+%\todo[inline]{possibly use for questions given}
+%\section{Survey Questions}
+%\label{sec:survey}
+%\begin{list}{\labelitemi}{\leftmargin=10pt \itemindent=0em \itemsep=0pt}
+%\item What was your initial goal for the game you made during the global game jam?
+%\item What inspirations or initial ideas did you have for your game? What was the starting inspirational source or goal for the game?
+%\item Why did you pick this particular idea for the game?
+%\item What problems did you encounter in developing your game?
+%\item What changes did you make to your initial idea as you worked on it during the game jam? Please describe the changes as small pieces of changes as possible.
+%\item What game mechanics and/or gameplay systems did you use in your game?
+%\item How did the mechanics or systems you made relate to the initial design ideas you had?
+%\item How did these mechanics change as you worked on the game during the game jam?
+%\item Did you prototype your game? If so, what kind of prototyping did you do and what did you learn from doing it?
+%\item What tools did you use to make your game? Please include software tools (e.g. programming languages or game engines) and any physical/analog materials (e.g. paper prototyping methods or storyboarding).
+%\end{list}
 
 \end{document}
