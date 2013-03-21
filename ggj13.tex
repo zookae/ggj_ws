@@ -79,8 +79,13 @@
 
 \maketitle
 \begin{abstract}
-The Global Game Jam provides a unique opportunity to time-constrained game development at a massive scale.
-We administered a free-response survey to 2013 Global Game Jam participants about their game development process. Categorized responses show participants: use diverse inspirations; set goals for their personal benefit, the impact on game players, and structure of the game system; rarely employ prototyping; and evolve their games by scoping down many ideas, concretizing a vague idea through implementation, and iteratively expanding a simple core game.
+The Global Game Jam provides a unique opportunity to study time-constrained game development at a massive scale.
+We administered a free-response survey to 2013 Global Game Jam participants about their game development process.
+Categorized responses show: 
+(a) participants use diverse inspirations; 
+(b) set goals for their personal benefit, the impact on game players, and structure of the game system; 
+(c) rarely employ traditional prototyping; and 
+(d) evolve their games by scoping down many ideas, concretizing a vague idea through implementation, and iteratively expanding a simple core game.
 We discuss next steps to developing more in-depth information about design processes.
 \end{abstract}
 
@@ -189,24 +194,30 @@ Paper prototyping used whiteboards, paper drawings, or various tokens and pieces
 %``[W]e used a simple paper prototype of poker chips on a grid to discuss and try various mechanics. It saved us a lot of programming time.''
 
 Engine prototyping used game making software and engines (most commonly Unity) to test ideas or incrementally build up a core game. Mechanics, levels, characters, physics, controls, animations, movement, and user interfaces were all subject to this prototyping process. 
-Participants often reported developing initial prototypes in game creation software (most commonly Unity) with the intent to switch to a more complex development, only for the initial prototype to evolve into the final game. In these cases features would incrementally be added to the core game until the end of the jam.
+Participants often reported developing initial prototypes in game creation software intending to switch to a more complex development, only for the initial prototype to evolve into the final game. In these cases features were incrementally added to the initial game until the end of the jam.
 
-Iterative development approaches (67 of 92) started from the core of the game before building upon it. Iterations would serially add in new mechanics, add or improve art assets and appearance, or rebalance existing aspects of the game based on personal testing or outside playtest feedback.
-Iterative development focused on realizing a pre-conceived game and honing its execution.
-Unlike the case above, iterative development intentionally sought for the engine used to be the final game engine, rather than planning to switch implementation.
+Iterative development approaches (67 of 92) started from the core of the game before building upon it. Iterations would serially add new mechanics, add or improve art assets, or balance existing aspects of the game based on personal testing or outside playtest feedback.
+Iterative development aimed to realize a pre-conceived game and hone its execution.
+Unlike the case above, iterative development planned for the engine used to be the final game engine, rather than later switching implementation.
 
-Prototypes alternatively served as tests for potential ideas (29 of 92).
-A quick baseline game would prove out whether an idea was valuable or serve as a demonstration of the concept to others. Rarely (3 responses) this process would involve parallel creation of multiple ideas before selecting the design to use. Prototypes varied in whether they served as the final code base, but conceptually differed from iterative prototyping. Test prototypes tested whether an idea was worth pursuing, rather than initiating the process of realizing a chosen idea.
+Test prototypes were used to explore potential ideas (29 of 92).
+A quick baseline game would prove whether an idea was valuable or demonstrate a concept to others. Rarely (3 responses), this process would involve parallel creation of multiple ideas before selecting the design to use. 
+Test prototypes sometimes became the final game, but conceptually differed from iterative prototyping. This approach used prototypes to test whether an idea was worth pursuing, rather than initiating the process of realizing a chosen idea.
+
+Development centered on learning tools to implement mechanics and removing game-breaking bugs. 
+Respondents overwhelmingly indicated programming and acquiring and using game development tools as their most pressing challenges (107 of 280). 
+Working with group members (25), meeting time constraints (24), making art (25), and fixing game bugs (20) were also important challenges. 
+Scoping (17), game balance (12), converting concepts into code (14), and conceptualization (8) were lesser issues.
+GGJ participants struggled to program their envisioned ideas, with design-level issues and asset creation as secondary concerns.
 
 %Parallel development approaches built and tested features for the game in isolation before combining them into the final product. Many different systems were tested alone before combining them to yield a complete game. In contrast to serial approaches, these efforts focused on ensuring all the desired systems were functional before being combined by parallelizing work among team members.
 
 %Compared to professionally described best practices \cite{fullerton2008:playcentric} 
 %GGJ participants use relatively little player feedback. 
-Development focused on learning tools to implement mechanics and removing obvious bugs that broke games. Respondents overwhelmingly indicated programming and acquiring and using game development tools as their most pressing challenges (107 of 280). Working with group members (25), meeting time constraints (24), making art (25), and fixing game bugs (20) were also important challenges. Scoping (17), game balance (12), converting concepts into code (14), and conceptualization (8) were lesser issues.
-GGJ participants were most challenged to implement their envisioned ideas at all, with design-level issues and asset creation as secondary concerns.
+
 %Given the GGJ is focused on providing programming experience this may not necessarily be problematic, although future jams may consider alternative ways to prepare or support learning basic game creation tools before or during the jam to alleviate some of these problems.
 
-\subsection{Realization}
+\subsection{Game Evolution}
 Realizing an initial game concept as an implemented game typically involved changing both the intended game features and in-game mechanics. 
 %Responses to questions about changes to the game mechanics and game ideas were often interchangeable and we report on their combined results here.
 GGJ participants managed the set of game features and game artifact in three ways:
@@ -217,21 +228,24 @@ and
 
 Ideas were changed by: adding or removing whole planned mechanics, swapping out one mechanic for an (often simpler) alternative, and fine-tuning and balancing a mechanic. Some participants also included details on changes to the game objectives, background story and theme, art assets and animations, or functionality of multiplayer interactions.
 
-Scope reduction involved cutting out intended features, taking complex or large mechanics and systems and reducing the number of elements involved, or substituting more complex systems for simpler alternatives.
-Cutting features reduced the overall functionality of the game, typically because the magnitude of the task to implement them was infeasible or time simply ran out. Participants would remove both systems within the game (e.g. attacks requiring combinations of buttons rather than single buttons) or reduce the total number of components used (e.g. fewer game levels or types of enemies).
+Scope reduction involved cutting planned features, reducing the complexity of mechanics or systems, or substituting complex mechanics with simpler alternatives.
+Cutting features reduced the overall functionality of the game before implementation, typically because the magnitude of the task was unfeasible or time ran out. Participants would remove systems within the game (e.g. attacks requiring combinations of buttons rather than single buttons) or reduce the total number of components used (e.g. fewer game levels or types of enemies).
 Reducing mechanics occurred when already implemented systems were buggy or dysfunctional or when playtesting (personally or with others) showed them to be overly complex or unintuitive. 
 Iterative scope reduction was the most common way participants described their process and was typically due to development constraints \todo[inline]{recode for these three categories}(51 of 225).
 
-An alternative approach involved only vaguely specified the game systems before attempting to build an initial game. Once that game was built further mechanics and ideas were added by riffing off of the core systems and crystallizing the general idea.
+Concept development involved only vaguely specified the game systems before attempting to build an initial game. Further mechanics and ideas were added to the game by expanding the core systems and crystallizing the general idea.
 Rather than carefully plan out a full game, a vague inspiration would seed the process of solidifying ideas through incremental development: ``Mostly we talked the idea out, and just got to jamming. We iterated on the first prototype, and went from there.''
 %``Come up with a game finishable in 4-8 hours and iterate from there.''
 In some cases this lead to an unintentional change in game genre due to incremental shifts in mechanics or a shift in design goals:
 ``Well because lack of fine tuning and testing, it turned out to be more time management game than rhythm-based on, which worked surprisingly well.''
 
-Core idea expansion was a feedback-based approach that planned a small game and extended it through feedback. Additions to the game were typically to improve usability through better feedback to players or controls, rather than adding new mechanics or systems. Unlike starting from a vague idea these games were described as built from a process of trying to get a product to players rapidly in order to refine and extend it as needed. These approaches put heavier emphasis on a polished final product, rather than realizing an abstract idea.
+Core idea expansion was a feedback-based approach that planned a small game and extended it through feedback. Additions to the game were typically to improve usability through better feedback to players or controls, rather than adding new mechanics or systems. Unlike concept development, participants described building games through a process of trying to get a product to players rapidly in order to refine and extend it as needed. These approaches put heavier emphasis on a polished final product, rather than realizing an abstract idea.
+
+
 
 \todo[inline]{rewrite}
 Iteratively scoping and expanding ideas are hallmarks of iterative development processes. Time and resource constraints at the GGJ appear to limit the widespread use of play-testing, pushing development to focus on implementation and putting all designer systems into the final game. 
+
 
 %Overall, the GGJ seems to serve as an important venue for developing experience in programming and realizing a final game based on a personal vision. The jam time constraints (and lack of available testers) generally steer development practices toward personal responses to the product, rather than player testing and feedback. These results open questions as to whether the GGJ can more effectively encourage standard industry practices such as paper prototyping and player testing and whether these industry methods are amenable to innovative practices under strict time constraints.
 
@@ -253,29 +267,16 @@ Our survey did not have identifying information on participants. Thus, we could 
 
 
 \section{Discussion}
-To date, game design processes have been examined using personal reflection \cite{anthropy2012:zinesters,hunicke2004:mda}, small-scale individual interaction \cite{nelson2009:reqanal}, or study of complete games \cite{bogost2011:howto}. We complement this work by providing a large-scale analysis of time-constrained game design, illustrating trends in development processes. GGJ participants: use diverse inspirations; set goals for their personal benefit, the impact on game players, and structure of the game system; rarely employ prototyping; and evolve their games by scoping down many ideas, concretizing a vague idea through implementation, and iteratively expanding a simple core game.
+To date, game design processes have been examined using personal reflection \cite{anthropy2012:zinesters,hunicke2004:mda}, small-scale individual interaction \cite{nelson2009:reqanal}, or study of complete games \cite{bogost2011:howto}. We complement this work by providing a large-scale analysis of time-constrained game design, illustrating trends in development processes. 
+GGJ participants and use diverse inspirations and set goals for their personal benefit, the impact on game players, and structure of the game system.
+Participants rarely employ traditional prototyping, instead evolving their games by scoping down many ideas, concretizing a vague idea through implementation, and iteratively expanding a simple core game.
 
-Our results indicate rich potential for more fine-grained analysis to uncover the relationships between processes and development outcomes. Designers vary in scoping, concretizing, or expanding out initial ideas. How do final products of these methods differ? What aspects of games are amenable to incremental addition and which must be present from the start? How do designers recognize dependencies among game systems and prioritize these results? Relating design processes to outcomes is crucial for better structuring future jams and even game development instruction and tools.
+Our results indicate rich potential for more fine-grained analysis to uncover the relationships between processes and development outcomes. Designers vary in scoping, concretizing, or expanding out initial ideas. Our preliminary study opens a number of future research questions. How do final products of these methods differ? Which aspects of games are amenable to incremental addition and which must be present from the start? How do designers recognize dependencies among game systems and prioritize them? Relating design processes to outcomes is crucial for better structuring future jams, game development instruction, and tools.
 
-Many designers struggled to implement their envisioned game systems and mechanics. How do they go about realizing the mapping of a mechanic concept to pieces of running code? Further, development was typically iterative. What kinds of feedback do designers use to guide development? How is feedback interpreted? What guides decisions to cut features as opposed to adjust the game engine? Understanding the feedback loop between a running game and design concepts has great potential to inform methods for teaching designers and building better game development technologies.
+Many designers struggled to implement their envisioned game systems and mechanics. How do they go about realizing the mapping of a mechanic concept to pieces of running code? Further, development was typically iterative. What kinds of feedback do designers use to guide development? How is feedback interpreted? What guides decisions to cut features as opposed to adjust the game engine? Understanding the feedback loop between a running game and design concepts can inform methods for teaching designers and building better game development technologies.
 
-Investigating the questions above poses methodological challenges for collecting and annotating data at a sufficient scale. Surveys provide useful qualitative results to develop theory, but require more in-depth qualitative methods to uncover deeper process-level details. Automated recording of game development processes and annotating these records are one potential means to enable quantitative analysis at the massive scale the GGJ provides.
-
-%GGJ goals: innovation, experimentation, collaboration, creativity
-%- innovation: inspirations are relatively narrow range
-%	- some came to innovate, but most came to make things
-%	- note that many drew inspirations that came from either side of interpreting "heart" - often macabre responses
-%- experimentation: many are involved to simply make a game
-%	- strong inspirations from existing games and desire to make basic game
-%	- Q: what would better foster experimentation?
-%- collaboration: few interested explicitly in networking or working with team; often complain about team problems
-%	- Q: are there better ways to foster collaboration through matchmaking methods or systems? pre-jam pairing or at-jam?
-%- biggest problems are around programming + collaborating
-%	- mismatch between what participants seek (short duration event to make game) and what jam provides
-
-%More research into differences in outcomes based on processes for approaching: pruning vs expanding. In-depth protocol analysis to get detailed evolution. Comparison of design methods by levels of experience.
-
-%need better ways to understand how constraints impact results, particularly when aspects like time limits vary. need better ways to automatically record many aspects: participant outcomes and experiences, products, practices employed over development process.
+Investigating the questions above poses methodological challenges for collecting and annotating data at a sufficient scale. Surveys provide useful qualitative results to develop theory, but require more in-depth qualitative methods to uncover deeper process-level details. Automated recording of game development processes and annotating these records are one means to enable quantitative analysis at the massive scale the GGJ provides. 
+Future research should build on these results to examine fine-grained details of time-constrained game development and develop new methodologies to leverage the potential of massive development information from sources like the GGJ.
 
 %ACKNOWLEDGMENTS are optional
 %\section{Acknowledgments}
