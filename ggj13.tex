@@ -51,6 +51,8 @@
 \usepackage{todonotes}
 \usepackage{hyperref}
 \usepackage{cite}
+\usepackage{floatrow}
+\newfloatcommand{capbtabbox}{table}[][\FBwidth]
 
 \begin{document}
 
@@ -108,8 +110,8 @@ However, these opportunities come with methodological challenges for studying th
 % % enables unique lens on compressed process of conceptualizing and realizing design ideas - good opportunity to study process
 In this paper we study the compressed development process of conceptualizing a game and realizing the game in a working product at the 2013 GGJ. Studying this process is challenging---building a rigorous theory of the time-limited development process requires understanding how designers choose ideas and develop their game ideas, and how this relates to the dynamics of group collaboration and code-level implementation. 
 We propose a multi-step approach: 
-using survey instruments to first characterize the space of game design process
-and then following with more detailed studies of aspects of these processes.
+(1) using survey instruments to first characterize the space of game design process and 
+(2) following with more detailed studies of aspects of these processes.
 This paper describes the results of a free-response survey we administered to 2013 GGJ participants about their design inspirations and goals, process of implementing those ideas in a game over the course of the GGJ, how they refined their game, and pitfalls they encountered along the way. 
 We find common trends in inspirations for game ideas, design goals for games, and process for implementing a design into a working game.
 %, and common issues encountered in developing the ideas. 
@@ -139,7 +141,7 @@ Developers refine games by finding aspects to alter, selecting among those aspec
 
 
 \section{Methods}
-We provided a nine question open-response survey that was administered online as part of the post-GGJ extended survey (Appendix \ref{sec:survey}). We gathered and manually coded responses to each of the questions into categories, allowing multiple possible codes for responses. Below we report on responses related to the main survey topics, combining information gained across specific survey questions. Note that responses were coded on a per-answer basis, allowing an individual response to have multiple codes. Respondents also did not answer all questions. We report the number of responses of a given type and total number of responses to indicate comparative frequency, rather than serve as a rigorous quantitative analysis of magnitude.
+We provided a nine question open-response survey that was administered online as part of the post-GGJ extended survey (Appendix \ref{sec:survey}). We gathered and manually coded responses to each of the questions into categories, allowing multiple possible codes for responses. Below we report on responses related to the main survey topics, combining information gained across specific survey questions. Note that responses were coded on a per-answer basis, allowing an individual response to have multiple codes. Respondents also did not answer all questions. We report the number of responses of a given type and total number of responses to indicate comparative frequency, rather than serve as a rigorous quantitative analysis of magnitude. Due to the survey structure demographic information was not available for most of the participants completing the extended post-GGJ survey, preventing demographic comparisons.
 
 
 \section{Results}
@@ -148,32 +150,67 @@ Below we discuss broad categories of responses within each of the study topics: 
 
 %General note: game jam theme has strong influence on participant results. Many used to ground ideation process. Jam constraints focused on development problems, with playtesting and prototyping often being cut. Team management is not frequently mentioned.
 
+
 \subsection{Inspirations}
 Participants drew from a breadth of sources for inspiration: other games, abstract concepts, emotions, life experiences, art styles, biological systems, books and poems, music, and films. Many mentioned explicit use of the 2013 GGJ theme---the sound of a heart beating---inspiring the use of rhythm in game mechanics, biological hearts as model systems, and life experiences of love. 
 %Interestingly, some intentionally sought to have more distant connections to the theme:
 %``I wanted to make a game that wasn't a literal interpretation of the theme.''
 %``I wanted a looser interpretation of the theme. Last year had lots of games with dragons/snakes. This year had lots of games with literal hearts. I took a step back and thought about just a pulse.''
 
+
+%\begin{figure}
+%\begin{floatrow}
+%\capbtabbox{%
+%\begin{tabular}{|c|c|}
+%\hline coding & frequency \\ 
+%\hline theme & 60 \\ 
+%\hline mechanic & 40 \\ 
+%\hline other video game & 39 \\ 
+%\hline game genre & 34 \\ 
+%\hline life experience & 17 \\ 
+%\hline movie & 14 \\ 
+%\hline story & 14 \\ 
+%\hline biology & 12 \\ 
+%\hline book & 9 \\ 
+%\hline emotion & 9 \\ 
+%\hline abstract & 8 \\ 
+%\hline art style & 6 \\ 
+%\hline board game & 6 \\ 
+%\hline previously made game & 5 \\ 
+%\hline music & 2 \\ 
+%\hline 
+%\end{tabular}
+%}{%
+%  \caption{A table}%
+%}
+%\ffigbox{%
+%  \includegraphics[width=0.7\linewidth]{./inspiration}
+%}{%
+%  \caption{A figure}%
+%}
+%\end{floatrow}
+%\end{figure}
+
 \begin{table}[tb]
 \centering
 \scriptsize
-\begin{tabular}{|c|c|}
-\hline coding & frequency \\ 
-\hline theme & 60 \\ 
-\hline mechanic & 40 \\ 
-\hline other video game & 39 \\ 
-\hline game genre & 34 \\ 
-\hline life experience & 17 \\ 
-\hline movie & 14 \\ 
-\hline story & 14 \\ 
-\hline biology & 12 \\ 
-\hline book & 9 \\ 
-\hline emotion & 9 \\ 
-\hline abstract & 8 \\ 
-\hline art style & 6 \\ 
-\hline board game & 6 \\ 
-\hline previously made game & 5 \\ 
-\hline music & 2 \\ 
+\begin{tabular}{|c|c|c|}
+\hline coding & frequency & percentage \\ 
+\hline theme & 60 & 21.7 \\ 
+\hline mechanic & 40 & 14.5 \\ 
+\hline other video game & 39 & 14.1  \\ 
+\hline game genre & 34 & 12.3 \\ 
+\hline life experience & 17 & 6.2 \\ 
+\hline movie & 14 & 5.1 \\ 
+\hline story & 14 & 5.1 \\ 
+\hline biology & 12 & 4.3 \\ 
+\hline emotion & 10 & 3.6 \\ 
+\hline book & 9 & 3.3 \\ 
+\hline abstract & 8 & 2.9 \\ 
+\hline art style & 6 & 2.2 \\ 
+\hline board game & 6 & 2.2 \\ 
+\hline previously made game & 5 & 1.8 \\ 
+\hline music & 2 & 0.7 \\ 
 \hline 
 \end{tabular}
 \caption{Game inspiration sources.}
@@ -205,22 +242,22 @@ An emphasis on competition among some is particularly interesting given the GGJ 
 \begin{table}[tb]
 \centering
 \scriptsize
-\begin{tabular}{|c|c|}
-\hline coding & frequency \\ 
-\hline make a game & 97 \\ 
-\hline try mechanic & 48 \\ 
-\hline player enjoyment & 44 \\ 
-\hline skill learning & 33 \\ 
-\hline recreate classic game & 25 \\ 
-\hline convey theme & 15 \\ 
-\hline enjoy making a game & 15 \\ 
-\hline be original & 13 \\ 
-\hline meet people & 6 \\ 
-\hline impact player & 6 \\ 
-\hline raise awareness & 6 \\ 
-\hline test an idea & 4 \\ 
-\hline win competition & 4 \\ 
-\hline build portfolio & 2 \\ 
+\begin{tabular}{|c|c|c|}
+\hline coding & frequency & percentage \\ 
+\hline make a game & 97 & 30.2 \\ 
+\hline try out a mechanic & 48 & 15.0 \\ 
+\hline have player enjoy & 44 & 13.7 \\ 
+\hline learn skills & 33 & 10.3 \\ 
+\hline recreate classic game & 25 & 7.8 \\ 
+\hline convey a theme & 15 & 4.7 \\ 
+\hline enjoy making a game & 15 & 4.7 \\ 
+\hline be original & 13 & 4.0 \\ 
+\hline meet people & 8 & 2.5 \\ 
+\hline impact the player & 7 & 2.2 \\ 
+\hline raise awareness of an issue & 6 & 1.9 \\ 
+\hline test an idea & 4 & 1.2 \\ 
+\hline win competition & 4 & 1.2 \\ 
+\hline build portfolio & 2 & 0.6 \\ 
 \hline 
 \end{tabular} 
 \caption{Goals for the game jam.}
@@ -242,11 +279,11 @@ Relatively few respondents reported any form of prototyping (114 of 241 response
 \begin{table}[tb]
 \centering
 \scriptsize
-\begin{tabular}{|c|c|}
-\hline coding & frequency \\ 
-\hline none & 126 \\ 
-\hline game engine & 92 \\ 
-\hline paper & 22 \\ 
+\begin{tabular}{|c|c|c|}
+\hline coding & frequency & percentage \\ 
+\hline none & 127 & 52.7 \\ 
+\hline game engine & 92 & 38.2 \\ 
+\hline paper & 22 & 9.1 \\ 
 \hline 
 \end{tabular} 
 \caption{Prototyping methods employed.}
@@ -256,12 +293,10 @@ Relatively few respondents reported any form of prototyping (114 of 241 response
 \begin{table}[tb]
 \centering
 \scriptsize
-\begin{tabular}{|c|c|}
-\hline coding & frequency \\ 
-\hline iterative & 61 \\ 
-\hline quick & 23 \\ 
-\hline feedback & 6 \\ 
-\hline parallel & 3 \\ 
+\begin{tabular}{|c|c|c|}
+\hline coding & frequency & percentage \\ 
+\hline iterative & 67 & 72.0 \\ 
+\hline quick & 26 & 28.0 \\ 
 \hline 
 \end{tabular} 
 \caption{Prototyping processes followed.}
@@ -276,11 +311,11 @@ Paper prototyping used whiteboards, paper drawings, or various tokens and pieces
 Engine prototyping used game making software and engines (most commonly Unity) to test ideas or incrementally build up a core game. Mechanics, levels, characters, physics, controls, animations, movement, and user interfaces were all subject to this prototyping process. 
 Participants often reported developing initial prototypes in game creation software intending to switch to a more complex development, only for the initial prototype to evolve into the final game. In these cases features were incrementally added to the initial game until the end of the jam.
 
-Iterative development approaches (67 of 92) started from the core of the game before building upon it. Iterations would serially add new mechanics, add or improve art assets, or balance existing aspects of the game based on personal testing or outside playtest feedback.
+Iterative development approaches (67 of 93) started from the core of the game before building upon it. Iterations would serially add new mechanics, add or improve art assets, or balance existing aspects of the game based on personal testing or outside playtest feedback.
 Iterative development aimed to realize a pre-conceived game and hone its execution.
 Unlike the case above, iterative development planned for the engine used to be the final game engine, rather than later switching implementation.
 
-Test prototypes were used to explore potential ideas (29 of 92).
+Test prototypes were used to explore potential ideas (26 of 93).
 A quick baseline game would prove whether an idea was valuable or demonstrate a concept to others. Rarely (3 responses), this process would involve parallel creation of multiple ideas before selecting the design to use. 
 Test prototypes sometimes became the final game, but conceptually differed from iterative prototyping. This approach used prototypes to test whether an idea was worth pursuing, rather than initiating the process of realizing a chosen idea.
 
@@ -288,23 +323,23 @@ Test prototypes sometimes became the final game, but conceptually differed from 
 \begin{table}[tb]
 \centering
 \scriptsize
-\begin{tabular}{|c|c|}
-\hline coding & frequency \\ 
-\hline programming & 107 \\ 
-\hline group members & 25 \\ 
-\hline art & 25 \\ 
-\hline time & 24 \\ 
-\hline bugs & 20 \\ 
-\hline none & 18 \\ 
-\hline scoping & 17 \\ 
-\hline source control / collaboration tools & 15 \\ 
-\hline express idea in code & 14 \\ 
-\hline balance & 12 \\ 
-\hline planning and integration & 10 \\ 
-\hline conceive idea & 8 \\ 
-\hline ability to execute & 6 \\ 
-\hline hardware & 5 \\ 
-\hline audio & 4 \\
+\begin{tabular}{|c|c|c|}
+\hline coding & frequency & percentage \\ 
+\hline programming & 108 & 33.6 \\ 
+\hline group members & 25 & 7.8 \\ 
+\hline art & 25 & 7.8 \\ 
+\hline time & 24 & 7.5 \\ 
+\hline bugs & 20 & 6.2 \\ 
+\hline none & 18 & 5.6 \\ 
+\hline scoping & 18 & 5.6 \\ 
+\hline source control / collaboration tools & 15 & 4.7 \\ 
+\hline express idea in code & 16 & 5.0 \\ 
+\hline balance & 16 & 5.0 \\ 
+\hline planning and integration & 10 & 3.1 \\ 
+\hline conceive idea & 10 & 3.1 \\ 
+\hline ability to execute & 7 & 2.2 \\ 
+\hline hardware & 5 & 1.6 \\ 
+\hline audio & 4 & 1.2 \\
 \hline 
 \end{tabular}
 \caption{Development problems.}
@@ -336,17 +371,17 @@ and
 \begin{table}[b]
 \centering
 \scriptsize
-\begin{tabular}{|c|c|}
-\hline coding & frequency \\ 
-\hline none & 71 \\ 
-\hline balance & 42 \\ 
-\hline simplify & 27 \\ 
-\hline scope & 24 \\ 
-\hline add & 16 \\ 
-\hline swap mechanics & 15 \\ 
-\hline change visualization & 15 \\ 
-\hline change controls & 7 \\ 
-\hline fail to complete & 4 \\ 
+\begin{tabular}{|c|c|c|}
+\hline coding & frequency & percentage \\ 
+\hline none & 71 & 31.6 \\ 
+\hline balance & 45 & 20.0 \\ 
+\hline simplify & 27 & 12.0 \\ 
+\hline scope & 24 & 10.7 \\ 
+\hline add & 17 & 7.6 \\ 
+\hline swap mechanics & 15 & 6.7  \\ 
+\hline change visualization & 15 & 6.7 \\ 
+\hline change controls & 7 & 3.1 \\ 
+\hline fail to complete & 4 & 1.8 \\ 
 \hline 
 \end{tabular} 
 \caption{Changes to design during the jam.}
@@ -356,23 +391,23 @@ and
 \begin{table}[tb]
 \centering
 \scriptsize
-\begin{tabular}{|c|c|}
-\hline coding & frequency \\ 
-\hline feature cut & 59 \\ 
-\hline none & 31 \\ 
-\hline change details & 28 \\ 
-\hline mechanic cut & 25 \\ 
-\hline component cut & 24 \\ 
-\hline mechanic swap & 20 \\ 
-\hline feature add & 17 \\ 
-\hline genre change & 17 \\ 
-\hline visualization change & 13 \\ 
-\hline story change & 13 \\ 
-\hline idea change & 9 \\ 
-\hline mechanic add & 8 \\ 
-\hline visualization cut & 6 \\ 
-\hline control change & 4 \\ 
-\hline story cut & 4 \\ 
+\begin{tabular}{|c|c|c|}
+\hline coding & frequency & percentage \\ 
+\hline feature cut & 59 & 21.2 \\ 
+\hline none & 31 & 11.2 \\ 
+\hline change details & 28 & 10.1 \\ 
+\hline mechanic cut & 25 & 9.0 \\ 
+\hline component cut & 24 & 8.6 \\ 
+\hline mechanic swap & 20 & 7.2 \\ 
+\hline feature add & 17 & 6.1 \\ 
+\hline genre change & 17 & 6.1 \\ 
+\hline visualization change & 13 & 4.7 \\ 
+\hline story change & 12 & 4.3 \\ 
+\hline idea change & 9 & 3.2 \\ 
+\hline mechanic add & 9 & 3.2 \\ 
+\hline visualization cut & 6 & 2.2 \\ 
+\hline control change & 4 & 1.4 \\ 
+\hline story cut & 4 & 1.4 \\ 
 \hline 
 \end{tabular} 
 \caption{Changes to design ideas during jam.}
