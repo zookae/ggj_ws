@@ -51,8 +51,6 @@
 \usepackage{todonotes}
 \usepackage{hyperref}
 \usepackage{cite}
-\usepackage{floatrow}
-\newfloatcommand{capbtabbox}{table}[][\FBwidth]
 
 \begin{document}
 
@@ -157,40 +155,6 @@ Participants drew from a breadth of sources for inspiration: other games, abstra
 %``I wanted to make a game that wasn't a literal interpretation of the theme.''
 %``I wanted a looser interpretation of the theme. Last year had lots of games with dragons/snakes. This year had lots of games with literal hearts. I took a step back and thought about just a pulse.''
 
-
-%\begin{figure}
-%\begin{floatrow}
-%\capbtabbox{%
-%\begin{tabular}{|c|c|}
-%\hline coding & frequency \\ 
-%\hline theme & 60 \\ 
-%\hline mechanic & 40 \\ 
-%\hline other video game & 39 \\ 
-%\hline game genre & 34 \\ 
-%\hline life experience & 17 \\ 
-%\hline movie & 14 \\ 
-%\hline story & 14 \\ 
-%\hline biology & 12 \\ 
-%\hline book & 9 \\ 
-%\hline emotion & 9 \\ 
-%\hline abstract & 8 \\ 
-%\hline art style & 6 \\ 
-%\hline board game & 6 \\ 
-%\hline previously made game & 5 \\ 
-%\hline music & 2 \\ 
-%\hline 
-%\end{tabular}
-%}{%
-%  \caption{A table}%
-%}
-%\ffigbox{%
-%  \includegraphics[width=0.7\linewidth]{./inspiration}
-%}{%
-%  \caption{A figure}%
-%}
-%\end{floatrow}
-%\end{figure}
-
 %\begin{table}[tb]
 %\centering
 %\scriptsize
@@ -226,7 +190,7 @@ Participants drew from a breadth of sources for inspiration: other games, abstra
 
 
 %Drawing from life experiences \cite{anthropy2012:zinesters}, systems to model \cite{crawford1984:gamedesign}, and other media \cite{bogost2011:howto} are all recognized in the game design literature as important sources of inspiration.
-The theme proved to be the most common inspiration, followed by mechanics and other games or game genres (Table \ref{fig:inspiration}).
+The theme proved to be the most common inspiration, followed by mechanics and other games or game genres (Figure \ref{fig:inspiration}).
 %The heart beat theme lead many projects to emphasize rhythm mechanics or incorporate rhythm elements into another genre. 
 Game references included specific digital games (e.g. Super Mario Bros.), playground or field games (e.g. Simon Says or tag), tabletop games (e.g. Hive), or game genres (e.g. platformer, card games). Other games inspired mechanics, art styles, controls, ``feel,'' and so on. 
 Overall, game references targeted single-player games and action-oriented genres (side-scrolling runner, platformer, one-button games, etc.).
@@ -242,37 +206,37 @@ Overall, these results show the breadth of topics addressed by GGJ participants 
 \subsection{Design Goals}
 Three broad categories of goals drive GGJ participants: (1) personal goals, (2) player-oriented goals, and (3) system level goals.
 Personal goals focused on benefits to GGJ participant themselves. 
-The single most common goal was to make and finish a game (Table \ref{tab:goals}). 
+The single most common goal was to make and finish a game (Figure \ref{fig:goals}). 
 Other personal goals included learning skills, networking with others, building a portfolio, testing potential ideas for later expansion, enjoying the game creation process, or even to ``win the competition.'' 
 Participants see the jam as an opportunity to test out game development or seed their future projects.
 An emphasis on competition among some is particularly interesting given the GGJ site explicitly states the GGJ is not a competition. %``The GGJ is not a competition.''\footnote{\url{http://globalgamejam.org/about}}
 
-\begin{table}[tb]
-\centering
-\scriptsize
-\begin{tabular}{|c|c|c|c|}
-\hline coding & type & frequency & percentage \\ 
-\hline make a game & personal & 97 & 30.2 \\ 
-\hline try out a mechanic & system & 48 & 15.0 \\ 
-\hline have player enjoy & player & 44 & 13.7 \\ 
-\hline learn skills & personal & 33 & 10.3 \\ 
-\hline recreate classic game & system & 25 & 7.8 \\ 
-\hline convey a theme & system & 15 & 4.7 \\ 
-\hline enjoy making a game & personal & 15 & 4.7 \\ 
-\hline be original & system & 13 & 4.0 \\ 
-\hline meet people & personal & 8 & 2.5 \\ 
-\hline impact the player & player & 7 & 2.2 \\ 
-\hline raise awareness of issue & player & 6 & 1.9 \\ 
-\hline test an idea & personal & 4 & 1.2 \\ 
-\hline win competition & personal & 4 & 1.2 \\ 
-\hline build portfolio & personal & 2 & 0.6 \\ 
-\hline 
-\end{tabular} 
-\caption{Goals for the game jam game design.}
-\label{tab:goals}
-\end{table}
+%\begin{table}[tb]
+%\centering
+%\scriptsize
+%\begin{tabular}{|c|c|c|c|}
+%\hline coding & type & frequency & percentage \\ 
+%\hline make a game & personal & 97 & 30.2 \\ 
+%\hline try out a mechanic & system & 48 & 15.0 \\ 
+%\hline have player enjoy & player & 44 & 13.7 \\ 
+%\hline learn skills & personal & 33 & 10.3 \\ 
+%\hline recreate classic game & system & 25 & 7.8 \\ 
+%\hline convey a theme & system & 15 & 4.7 \\ 
+%\hline enjoy making a game & personal & 15 & 4.7 \\ 
+%\hline be original & system & 13 & 4.0 \\ 
+%\hline meet people & personal & 8 & 2.5 \\ 
+%\hline impact the player & player & 7 & 2.2 \\ 
+%\hline raise awareness of issue & player & 6 & 1.9 \\ 
+%\hline test an idea & personal & 4 & 1.2 \\ 
+%\hline win competition & personal & 4 & 1.2 \\ 
+%\hline build portfolio & personal & 2 & 0.6 \\ 
+%\hline 
+%\end{tabular} 
+%\caption{Goals for the game jam game design.}
+%\label{tab:goals}
+%\end{table}
 
-\begin{figure}[tbph]
+\begin{figure}[bp]
 \centering
 \includegraphics[width=\linewidth]{./goals}
 \caption{Goals for the game jam game design.}
@@ -337,32 +301,31 @@ Test prototypes explored potential ideas to prove whether an idea was valuable o
 Test prototypes sometimes became the final game, but conceptually differed from iterative development. 
 Test prototypes checked if an idea was worth pursuing, rather than initiating the process of iteratively developing a chosen idea.
 
-
-\begin{table}[tb]
-\centering
-\scriptsize
-\begin{tabular}{|c|c|c|}
-\hline coding & frequency & percentage \\ 
-\hline programming & 108 & 33.6 \\ 
-\hline group members & 25 & 7.8 \\ 
-\hline art & 25 & 7.8 \\ 
-\hline time & 24 & 7.5 \\ 
-\hline bugs & 20 & 6.2 \\ 
-\hline none & 18 & 5.6 \\ 
-\hline scoping & 18 & 5.6 \\ 
-\hline express idea in code & 16 & 5.0 \\ 
-\hline balance & 16 & 5.0 \\ 
-\hline source control / collaboration tools & 15 & 4.7 \\ 
-\hline planning and integration & 10 & 3.1 \\ 
-\hline conceive idea & 10 & 3.1 \\ 
-\hline ability to execute & 7 & 2.2 \\ 
-\hline hardware & 5 & 1.6 \\ 
-\hline audio & 4 & 1.2 \\
-\hline 
-\end{tabular}
-\caption{Problems encountered during development.}
-\label{tab:problem}
-\end{table}
+%\begin{table}[tb]
+%\centering
+%\scriptsize
+%\begin{tabular}{|c|c|c|}
+%\hline coding & frequency & percentage \\ 
+%\hline programming & 108 & 33.6 \\ 
+%\hline group members & 25 & 7.8 \\ 
+%\hline art & 25 & 7.8 \\ 
+%\hline time & 24 & 7.5 \\ 
+%\hline bugs & 20 & 6.2 \\ 
+%\hline none & 18 & 5.6 \\ 
+%\hline scoping & 18 & 5.6 \\ 
+%\hline express idea in code & 16 & 5.0 \\ 
+%\hline balance & 16 & 5.0 \\ 
+%\hline source control / collaboration tools & 15 & 4.7 \\ 
+%\hline planning and integration & 10 & 3.1 \\ 
+%\hline conceive idea & 10 & 3.1 \\ 
+%\hline ability to execute & 7 & 2.2 \\ 
+%\hline hardware & 5 & 1.6 \\ 
+%\hline audio & 4 & 1.2 \\
+%\hline 
+%\end{tabular}
+%\caption{Problems encountered during development.}
+%\label{tab:problem}
+%\end{table}
 
 \begin{figure}[tbph]
 \centering
@@ -372,7 +335,7 @@ Test prototypes checked if an idea was worth pursuing, rather than initiating th
 \end{figure}
 
 Development centered on learning tools to implement mechanics and removing game-breaking bugs. 
-Respondents overwhelmingly indicated programming and acquiring and using game development tools as their most pressing challenges (108 of 280) (Table \ref{tab:problem}).
+Respondents overwhelmingly indicated programming and acquiring and using game development tools as their most pressing challenges (108 of 280) (Figure \ref{fig:problem}).
 Issues around coordinating a team and implementing code were most prominent, with conceptualization and game refinement as less frequent problems.
 %Working with group members, meeting time constraints, making art, and fixing game bugs were also important challenges.
 %Scoping, game balance, converting concepts into code, and conceptualization were lesser issues.
@@ -414,9 +377,7 @@ and
 %\label{tab:sys_changes}
 %\end{table}
 
-
-
-Ideas were changed by: adding or removing planned mechanics, swapping out one mechanic for an (often simpler) alternative, and fine-tuning and balancing a mechanic. Some participants included details on changes to the game objectives, story and theme, art assets and animations, or functionality of multiplayer interactions (Table \ref{tab:idea_changes}).
+Ideas were changed by: adding or removing planned mechanics, swapping out one mechanic for an (often simpler) alternative, and fine-tuning and balancing a mechanic. Some participants included details on changes to the game objectives, story and theme, art assets and animations, or functionality of multiplayer interactions (Figure \ref{fig:idea_changes}).
 
 %Scope reduction involved cutting planned features, cutting components of a system or whole mechanics, substituting complex mechanics with simpler alternatives, or removing interface or story elements (138 of 278).
 Scope reduction started from a complex specification before cutting planned features, mechanics, story, or interface elements (138 of 278).
@@ -440,31 +401,38 @@ Overall, GGJ participants tend to change game features, rather than compromise d
 Openly exploring possible designs was comparatively rare (38). 
 Features are more likely to change than the design ideas. Taken together, GGJ development is focused on delivering a planned idea, rather than experimenting with possible ideas.
 
-\begin{table}[tb]
+%\begin{table}[tb]
+%\centering
+%\scriptsize
+%\begin{tabular}{|c|c|c|c|}
+%\hline coding & category & frequency & percentage \\ 
+%\hline feature cut & scope reduction & 59 & 21.2 \\ 
+%\hline none & none & 31 & 11.2 \\ 
+%\hline change details & idea expansion & 28 & 10.1 \\ 
+%\hline mechanic cut & scope reduction & 25 & 9.0 \\ 
+%\hline component cut & scope reduction & 24 & 8.6 \\ 
+%\hline mechanic swap & scope reduction & 20 & 7.2 \\ 
+%\hline feature add & idea expansion & 17 & 6.1 \\ 
+%\hline genre change & concept development & 17 & 6.1 \\ 
+%\hline visualization swap & idea expansion & 13 & 4.7 \\ 
+%\hline story change & concept development & 12 & 4.3 \\ 
+%\hline idea change & concept development & 9 & 3.2 \\ 
+%\hline mechanic add & idea expansion & 9 & 3.2 \\ 
+%\hline visualization cut & scope reduction & 6 & 2.2 \\ 
+%\hline control change & idea expansion & 4 & 1.4 \\ 
+%\hline story cut & scope reduction & 4 & 1.4 \\ 
+%\hline 
+%\end{tabular} 
+%\caption{Changes to design ideas during jam.}
+%\label{tab:idea_changes}
+%\end{table}
+
+\begin{figure}
 \centering
-\scriptsize
-\begin{tabular}{|c|c|c|c|}
-\hline coding & category & frequency & percentage \\ 
-\hline feature cut & scope reduction & 59 & 21.2 \\ 
-\hline none & none & 31 & 11.2 \\ 
-\hline change details & idea expansion & 28 & 10.1 \\ 
-\hline mechanic cut & scope reduction & 25 & 9.0 \\ 
-\hline component cut & scope reduction & 24 & 8.6 \\ 
-\hline mechanic swap & scope reduction & 20 & 7.2 \\ 
-\hline feature add & idea expansion & 17 & 6.1 \\ 
-\hline genre change & concept development & 17 & 6.1 \\ 
-\hline visualization swap & idea expansion & 13 & 4.7 \\ 
-\hline story change & concept development & 12 & 4.3 \\ 
-\hline idea change & concept development & 9 & 3.2 \\ 
-\hline mechanic add & idea expansion & 9 & 3.2 \\ 
-\hline visualization cut & scope reduction & 6 & 2.2 \\ 
-\hline control change & idea expansion & 4 & 1.4 \\ 
-\hline story cut & scope reduction & 4 & 1.4 \\ 
-\hline 
-\end{tabular} 
-\caption{Changes to design ideas during jam.}
-\label{tab:idea_changes}
-\end{table}
+\includegraphics[width=\linewidth]{./idea_change}
+\caption{Changes to design features during the jam.}
+\label{fig:idea_changes}
+\end{figure}
 
 \section{Methodological Implications}
 % % note limitations of survey method: wasn't able to get great detail on flow of process; focus on high-level changes; only those who opt-in
@@ -490,8 +458,8 @@ Future work must develop methods for large-scale recording and analysis of desig
 Future research should build on these results to examine fine-grained details of time-constrained game development and develop new methodologies to leverage the potential of massive development information from sources like the GGJ.
 
 %ACKNOWLEDGMENTS are optional
-%\section{Acknowledgments}
-%Global Game Jam committee. Global Game Jam participants and survey respondents.
+\section{Acknowledgments}
+The authors would like to thank the Global Game Jam committee, participants, and survey respondents.
 
 
 % The following two commands are all you need in the
